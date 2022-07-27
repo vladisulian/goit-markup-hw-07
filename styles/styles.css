@@ -83,7 +83,7 @@ address,
   font-style: normal;
 }
 
-/* ----------------common styles---------------- */
+/* ! common styles */
 
 .container {
   width: 1200px;
@@ -106,7 +106,7 @@ address,
   padding-bottom: 94px;
 }
 
-/* ##### header ##### */
+/* * ##### header ##### */
 
 .header {
   height: 80px;
@@ -184,7 +184,7 @@ address,
   color: var(--accent_col);
 }
 
-/* ##### icon svg ##### */
+/* * ##### icon svg ##### */
 
 .icon_mail {
   width: 16px;
@@ -206,7 +206,7 @@ address,
   height: 70px;
 }
 
-/* ##### svg hover ##### */
+/* * ##### svg hover ##### */
 
 .svg {
   fill: var(--calm_state_svg);
@@ -295,7 +295,7 @@ address,
   box-shadow: 0 0 0 1.5px var(--focus_bg_col);
 }
 
-/* ##### modal ##### */
+/* * ##### modal ##### */
 .backdrop {
   position: fixed;
   top: 0;
@@ -457,7 +457,7 @@ label {
   border-color: var(--accent_col);
 }
 
-/* #### */
+/* ! #### */
 .label-form:focus-within .input,
 .label-form:hover .input {
   border: 1px solid var(--accent_col);
@@ -467,7 +467,7 @@ label {
   fill: var(--accent_col);
 }
 
-/* checkbox */
+/* ! checkbox */
 .checkbox-cont {
   display: flex;
   flex-direction: row-reverse;
@@ -520,29 +520,27 @@ label {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-/* стили при наведении курсора на checkbox */
+/* ? стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: var(--accent_col);
 }
-/* стили для активного состояния чекбокса (при нажатии на него) */
+/* ? стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active + label::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
-/* стили для чекбокса, находящегося в фокусе */
+/* ? стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus + label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+/* ? стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
-/* стили для чекбокса, находящегося в состоянии disabled */
+/* ? стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
 }
-
-/* checkbox */
 
 .checkbox-text {
   line-height: calc(24 / 14);
@@ -555,6 +553,9 @@ label {
 
   color: var(--accent_col);
 }
+
+/* ! checkbox */
+
 .submit-button {
   width: 200px;
   height: 50px;
@@ -588,7 +589,7 @@ label {
   box-shadow: 0 0 0 1.5px var(--focus_bg_col);
 }
 
-/* ##### traits ##### */
+/* * ##### traits ##### */
 .traits_list_block {
   display: flex;
   gap: 30px;
@@ -663,7 +664,7 @@ label {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* ##### our team sect ##### */
+/* * ##### our team sect ##### */
 .our_team_sect {
   text-align: center;
   background-color: var(--our_team_bg_col);
@@ -743,7 +744,7 @@ label {
   background-color: var(--accent_col);
 }
 
-/* =========== customers ===========*/
+/* * =========== customers ===========*/
 
 .customers-text {
   font-weight: 700;
@@ -786,7 +787,7 @@ label {
   height: 106px;
 }
 
-/* ##### footer ##### */
+/* * ##### footer ##### */
 
 .footer {
   padding: 60px 0;
@@ -941,12 +942,12 @@ label {
   padding-left: 10px;
 }
 
-/* ##### portfolio ##### */
+/* ! ##### portfolio ##### */
 
 .filter_section {
   padding-top: 94px;
 }
-/* ##### filter ##### */
+/* * ##### filter ##### */
 .filter_button_block {
   display: flex;
   margin-bottom: 50px;
@@ -998,7 +999,7 @@ label {
   /* !!flex-basis didn't work!! */
   /* flex-basis: calc((100% - 40px) / 3); */
 }
-/* ##### img ##### */
+/* * ##### img ##### */
 .filter_link {
   display: block;
 }
