@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ##### normalize ##### -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container flex_container">
+        <a href="./index.html" class="Web webstudio">Web<span class="Studio">Studio</span></a>
+        <!-- nav -->
+        <nav class="nav">
+          <ul class="nav_list_block list">
+            <li class="nav_list">
+              <a href="./index.html" class="nav_text">Студия</a>
+            </li>
+            <li class="nav_list">
+              <a href="./portfolio.html" class="nav_text current">Портфолио</a>
+              <div class="current_page"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_text">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <ul class="contacts_header_list list">
+          <li style="margin-right: 30px">
+            <a href="mailto:info@devstudio.com" class="contacts">
+              <svg class="icon_mail">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+380961111111" class="contacts">
+              <svg class="icon_phone">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">text</h1>
+          <!-- filter btn sect -->
+          <ul class="filter_button_block">
+            <li>
+              <button type="button" class="btn_filter current_btn">Все</button>
+            </li>
+            <li>
+              <button type="button" class="btn_filter">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="btn_filter">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="btn_filter">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="btn_filter">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- img sect -->
+          <ul class="filter_img_block">
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img1.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Всё это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Технокряк</h2>
+                  <p class="filter_img_downer_text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img2.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita
+                      voluptas maxime accusamus, nam molestiae tempore placeat quia quaerat quidem
+                      deserunt? Nam assumenda fuga deleniti quibusdam itaque magni veritatis hic.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter_img_downer_text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img3.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita placeat
+                      quasi, ipsa numquam possimus sed blanditiis dignissimos vel nesciunt nemo
+                      consequatur quas non fugit facilis!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Ресторан Seafood</h2>
+                  <p class="filter_img_downer_text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img4.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, mollitia!</p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Проект Prime</h2>
+                  <p class="filter_img_downer_text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img5.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nisi aperiam
+                      iure eius, doloremque dicta voluptatibus aliquid?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Проект Boxes</h2>
+                  <p class="filter_img_downer_text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img6.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit quasi
+                      iure, nulla facere eos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Inspiration has no Borders</h2>
+                  <p class="filter_img_downer_text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img7.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam ipsa
+                      veritatis dolorum consequatur magni.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Издание Limited Edition</h2>
+                  <p class="filter_img_downer_text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img8.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laboriosam
+                      architecto dolore reiciendis obcaecati officia. Quibusdam molestias
+                      necessitatibus deserunt rerum modi? Consequuntur inventore possimus, saepe
+                      quam pariatur dolore!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Проект LAB</h2>
+                  <p class="filter_img_downer_text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="filter_link">
+                <div class="filter_overlay_square">
+                  <img src="./images/portfolio/img9.jpg" alt="portfolio_pic" />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sint?
+                      Excepturi nesciunt facere delectus animi accusamus officiis cum omnis culpa,
+                      eum, sapiente ex mollitia harum consequuntur maxime assumenda obcaecati
+                      eligendi sed!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter_img_container">
+                  <h2 class="filter_img_text">Growing Business</h2>
+                  <p class="filter_img_downer_text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container join-link-container">
+        <!-- address container-->
+        <div>
+          <a href="./index.html" class="footer_web webstudio"
+            >Web<span class="footer_Studio">Studio</span>
+          </a>
+          <!-- ##### address ##### -->
+          <address>
+            <ul>
+              <!-- footer map -->
+              <li class="footer_contacts_item">
+                <a
+                  href="https://goo.gl/maps/mLrUPEMYMxBehZcJ7"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  class="footer_map"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer_contacts_item">
+                <a href="mailto:info@example.com" class="footer_contacts">info@example.com</a>
+              </li>
+              <li class="footer_contacts_item">
+                <a href="tel:+38099111111" class="footer_contacts">+38 099 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- join container -->
+        <div class="join-footer">
+          <p class="join-text">Присоединяйтесь</p>
+          <ul class="our-team-list">
+            <li class="our-team-svg-item join-footer-item">
+              <a href="https://www.instagram.com" class="our-team-link join-svg">
+                <svg class="our-team-svg footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-svg-item join-footer-item">
+              <a href="https://twitter.com/?lang=ru" class="our-team-link join-svg">
+                <svg class="our-team-svg footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-svg-item join-footer-item">
+              <a href="https://uk-ua.facebook.com" class="our-team-link join-svg">
+                <svg class="our-team-svg footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-svg-item join-footer-item">
+              <a
+                href="https://www.linkedin.com/in/владислав-ульянеев-21a133240/"
+                class="our-team-link join-svg"
+              >
+                <svg class="our-team-svg footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
