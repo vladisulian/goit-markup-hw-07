@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(/sass/utils/_vars.scss);
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -530,8 +531,8 @@ address {
   border-radius: 50%;
   background-color: #ffffff;
   /* transition-property: color;
-      transition-delay: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+        transition-delay: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal_closeBtnIcon {
@@ -625,55 +626,6 @@ address {
   width: 270px;
   line-height: 24px;
   color: #757575;
-}
-
-.main-wawd {
-  text-align: center;
-  padding-top: 0;
-}
-
-.main-wawd__title {
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-}
-
-.main-wawd__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.main-wawd__item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.main-wawd__item {
-  position: relative;
-}
-
-.main-wawd__description {
-  position: absolute;
-  bottom: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 370px;
-  height: 70px;
-  font-weight: 700;
-  line-height: 1.1428571429;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .main-team {
