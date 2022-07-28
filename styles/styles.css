@@ -336,8 +336,9 @@ address,
 .modal-label {
   margin-bottom: 10px;
 }
-.modal-label:focus-within .modal-svg,
-.modal-label:hover .modal-svg {
+/* ! modal svg hover & focus */
+.modal-label:focus-within .modal-label__icon,
+.modal-label:hover .modal-label__icon {
   color: var(--accent_col);
 }
 .modal-label__last {
@@ -398,15 +399,6 @@ address,
 .modal__feedback:hover,
 .modal__feedback:focus {
   border-color: var(--accent_col);
-}
-/* ! modal svg hover&focus */
-.modal-label:focus-within .modal-label__input,
-.modal-label:hover .modal-label__input {
-  border: 1px solid var(--accent_col);
-}
-.modal-label:focus-within .modal-label__icon,
-.modal-label:hover .modal-label__icon {
-  fill: var(--accent_col);
 }
 
 /* ? checkbox */
