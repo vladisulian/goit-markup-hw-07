@@ -628,6 +628,55 @@ address {
   color: #757575;
 }
 
+.main-wawd {
+  text-align: center;
+  padding-top: 0;
+}
+
+.main-wawd__title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+}
+
+.main-wawd__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-wawd__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.main-wawd__item {
+  position: relative;
+}
+
+.main-wawd__description {
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .main-team {
   text-align: center;
   background-color: #f5f4fa;
