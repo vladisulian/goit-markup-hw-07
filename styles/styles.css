@@ -973,10 +973,7 @@ address {
   position: relative;
   overflow: hidden;
 }
-.filter-img__link:hover .overlay,
-.filter-img__link:focus .overlay {
-  transform: translateY(0);
-}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -1006,6 +1003,10 @@ address {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-img__link:hover .overlay,
+.filter-img__link:focus .overlay {
+  transform: translateY(0);
 }
 .filter-img__link:hover,
 .filter-img__link:focus {
