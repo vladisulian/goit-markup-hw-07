@@ -62,6 +62,16 @@ svg {
 address {
   font-style: normal;
 }
+.current_btn {
+  color: $btn-text-col;
+  background-color: $btn-bg-col;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.current {
+  color: $accent-col;
+}
 
 .visually-hidden {
   position: absolute;
@@ -334,11 +344,6 @@ address {
 
 // ! modal svg hover & focus
 
-// .modal-label:focus-within .modal-label__icon,
-// .modal-label:hover .modal-label__icon {
-//   color: var(--accent_col);
-// }
-
 .modal-label__last {
   margin-bottom: 20px;
 }
@@ -368,10 +373,7 @@ address {
     border-color: $accent-col;
   }
 }
-// .modal-label__input:hover,
-// .modal-label__input:focus {
-//   border-color: $accent-col;
-// }
+
 .modal-label__icon {
   position: absolute;
 
@@ -406,10 +408,6 @@ address {
     border-color: $accent-col;
   }
 }
-// .modal__feedback:hover,
-// .modal__feedback:focus {
-//   border-color: $accent-col;
-// }
 
 // ! checkbox
 
@@ -462,24 +460,24 @@ address {
   background-color: #0b76ef;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
-/* ? при наведении курсора на checkbox */
+// * при наведении курсора на checkbox
 .modal-checkbox__checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: $accent-col;
 }
-/* ? активное состояние чекбокса (при нажатии на него) */
+// * активное состояние чекбокса (при нажатии на него)
 .modal-checkbox__checkbox:not(:disabled):active + label::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
-/* ? в фокусе */
+// * в фокусе
 .modal-checkbox__checkbox:focus + label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-/* ? в фокусе и не в состоянии checked */
+// * в фокусе и не в состоянии checked
 .modal-checkbox__checkbox:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
-/* ? в состоянии disabled */
+// * в состоянии disabled
 .modal-checkbox__checkbox:disabled + label::before {
   background-color: #e9ecef;
 }
@@ -496,7 +494,7 @@ address {
   color: $accent-col;
 }
 
-/* * modal closeBtn */
+// ! modal close btn
 .modal__closeBtn {
   position: absolute;
 
@@ -564,13 +562,6 @@ address {
     box-shadow: 0 0 0 1.5px $accent-col;
   }
 }
-// .modal__submit:hover,
-// .modal__submit:focus {
-//   color: $btn-text-col;
-//   background-color: $btn-hover-col;
-//   outline: none;
-//   box-shadow: 0 0 0 1.5px $accent-col;
-// }
 
 // ! traits
 
@@ -728,11 +719,7 @@ address {
     background-color: $accent-col;
   }
 }
-// .main-team__link:hover,
-// .main-team__link:focus {
-//   color: $btn-text-col;
-//   background-color: $accent-col;
-// }
+
 .main-team__icon {
   width: 20px;
   height: 20px;
@@ -971,8 +958,8 @@ address {
 
   cursor: pointer;
 
-  color: $secondary-text-col;
-  background-color: $our-team-bg-col;
+  //   color: $secondary-text-col;
+  //   background-color: $our-team-bg-col;
 
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -1069,16 +1056,4 @@ address {
   line-height: calc(30 / 16);
 
   color: $secondary-text-col;
-}
-
-// ! don't move current_btn
-.current_btn {
-  color: $btn-text-col;
-  background-color: var(--btn_bg_cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.current {
-  color: $accent-col;
 }
